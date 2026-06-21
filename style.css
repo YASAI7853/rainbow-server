@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0b0b0f;
+    background-image: url("rainbow_bg.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: 0 0;
+    background-attachment: fixed;
+    animation: scrollBackground 30s linear infinite;
+}
+
+@keyframes scrollBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -1920px 0; }
+}
+
+.main-container {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #8800ff;
+    animation: neonGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #8800ff; }
+    100% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #8800ff; }
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ff00ff;
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
